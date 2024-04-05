@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">BetssonGroupTechnicalAssesment</string>
     <string name="grid_item_price_label"><b>Price:</b> %1$s</string>
     <string name="grid_item_rating_label"><b>Rating:</b> %1$s</string>
     <string name="grid_item_distance_label">%1$s km from you</string>
