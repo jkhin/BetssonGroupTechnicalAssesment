@@ -38,15 +38,23 @@ android {
         }
     }
 
-    flavorDimensions += "version"
+    flavorDimensions += "bars"
     productFlavors {
         val properties = Properties()
         properties.load(project.rootProject.file("local.properties").inputStream())
 
-        create("coffeeBars") {
+        create("coffee") {
+            dimension = "bars"
+            applicationId = "jk.labs.dev.betsson.group.technical.assesment.coffee.bars"
+            versionCode = 1
+            versionName = "1.0"
             buildConfigField("Integer", "FSQ_RADIUS", properties.getProperty("FSQ_COFFEE_BAR_RADIUS"))
         }
-        create("cocktailBars") {
+        create("cocktail") {
+            dimension = "bars"
+            applicationId = "jk.labs.dev.betsson.group.technical.assesment.cocktail.bars"
+            versionCode = 1
+            versionName = "1.0"
             buildConfigField("Integer", "FSQ_RADIUS", properties.getProperty("FSQ_COCKTAIL_BAR_RADIUS"))
         }
     }
